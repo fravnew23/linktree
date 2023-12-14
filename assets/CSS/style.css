@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Preahvihear&display=swap');
+
+* {
+    font-family: 'Nova Square', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    /* untuk menengahkan */
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url(../Image/Logo\ No\ bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.name{
+    margin-top: 0,5%;
+}
+
+.list{
+    /* untuk menghilangkan list */
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* untuk jarak antar list */
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.list li{
+background-color: rgb(102, 0, 255);
+padding: .5rem 1rem;
+border-radius: 3rem;
+width: 100%;
+text-align: center;
+}
+
+.list li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+/* membuat kondisi ketika cursor berada di list item */
+.list li a :hover{
+    filter: brightness(20%);
+}
+/* membuat kondisi ketika list di klik */
+.list li:active{
+    background-color: rgb(214, 134, 14);
+    filter: brightness(95%);
+}
